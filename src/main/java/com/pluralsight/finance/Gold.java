@@ -12,6 +12,6 @@ public class Gold extends FixedAsset{
 
     @Override
     public BigDecimal getValue() {
-        return super.getValue();
+        return null;
     }
 }

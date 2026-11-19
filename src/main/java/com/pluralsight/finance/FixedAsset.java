@@ -14,7 +14,5 @@ public abstract class FixedAsset implements Valuable{
     }
 
     @Override
-    public BigDecimal getValue() {
-        return null;
-    }
+    public abstract BigDecimal getValue();
 }

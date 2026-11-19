@@ -16,6 +16,6 @@ public class Jewelry extends FixedAsset{
 
     @Override
     public BigDecimal getValue() {
-        return super.getValue();
+        return null;
     }
 }
