@@ -11,11 +11,14 @@ public class FinanceApplication {
         Valuable account2 = new BankAccount("Gary", "456", new BigDecimal("1500"));
 
         // try to deposit money into both accounts
-        account1.deposit(BigDecimal.valueOf(100.00));
-        account2.deposit(BigDecimal.valueOf(100.00));
+        account1.deposit(new BigDecimal("100"));
         /*
         * account2.deposit(BigDecimal.valueOf(100.00));
         * Cannot resolve method 'deposit' in 'Valuable'
         * */
+
+        // call getValue for both accounts
+        System.out.printf("Account 1 value: $%.2f%n", account1.getValue());
+        System.out.printf("Account 2 value: $%.2f%n", account2.getValue());
     }
 }
